@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake</title>
   </head>
-  <body>
-    
+  <body class="bg-dark-300 flex flex-col items-center justify-start">
+    <h1 id="title" class="m-t-10 m-b-20">Snake - Nokia 3310</h1>
+    <canvas
+      id="game"
+      width="400"
+      height="400"
+      class="border-solid border-amber bg-dark-100 block m-0 m-a m-10px"
+    ></canvas>
+    <p id="score" class="m-t-20 text-20px">
+      Score : <span id="score-counter">0</span>
+    </p>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
